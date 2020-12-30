@@ -1,0 +1,308 @@
+@font-face{
+    font-family:"cambria";
+    src:url(../fonts/cambria.ttc);
+    font-family:"KoreanNGDL";
+    src:url(../fonts/KoreanNGDL.woff);
+    font-family:"KoreanNGDM";
+    src:url(../fonts/KoreanNGDM.woff);
+}
+/*top*/
+#top{
+    width:50px; height:50px;
+    text-align:center; line-height:50px;
+    border:1px solid #000;
+    background:#fff; text-decoration:none; color:#000;
+    font-size:0.75em; font-family:"KoreanNGDM", serif;
+    letter-spacing:-0.05em;
+    position:fixed; bottom:30px; right:30px;
+}
+/*layout*/
+#wrap{text-align:center;}
+#wrap #header_bg{
+    background-color:#000; width:100%;
+    position:fixed; left:0; top:0;  z-index:9999;
+}
+#wrap #header_bg header{
+    height:150px; width:1400px; margin:0 auto; 
+}
+#wrap #visual{
+    margin-top:150px; height:810px;
+    background-image:url(../image/index/visual_img.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+#wrap #contents1{overflow:hidden;}
+#wrap #contents2{
+    width:1400px; margin:200px auto;
+}
+#wrap #footer_bg{background-color:#000;}
+#wrap #footer_bg footer{
+    width:1400px; margin:0 auto; padding: 54px 0; overflow:hidden;
+}
+
+a{text-decoration:none;}
+
+/*header*/
+/*top*/
+#wrap #header_bg header #h_top{
+    overflow:hidden; height:30px; line-height:30px;
+}
+/*top_left*/
+#wrap #header_bg header #h_top #h_top_left{
+    float:left;
+}
+#wrap #header_bg header #h_top #h_top_left li{
+    display:inline-block;
+}
+#wrap #header_bg header #h_top #h_top_left li a{}
+/*top_right*/
+#wrap #header_bg header #h_top #h_top_right{
+    float:right;
+}
+#wrap #header_bg header #h_top #h_top_right li{
+    display:inline-block;
+}
+#wrap #header_bg header #h_top #h_top_right li a{}
+#wrap #header_bg header #h_top #h_top_right li a em{
+    color:#ff0000; margin-left:5px;
+}
+#wrap #header_bg header #h_top #h_top_right li a img{width:14px;}
+
+/*header #h_top group*/
+#wrap #header_bg header #h_top #h_top_left li a, #wrap #header_bg header #h_top #h_top_right li a{
+    color:#fff; font-family:"Microsoft Sans Serif";
+    font-size:0.813em; letter-spacing:-0.025em;
+    margin-right:15px;
+}
+#wrap #header_bg header #h_top #h_top_left b, #wrap #header_bg header #h_top #h_top_right b{
+    border-right:1px solid #fff; display:inline-block;
+    margin-right:10px; height:10px; line-height:10px;
+}
+
+/*btm*/
+#wrap #header_bg header #h_btm{
+    clear:both; height:120px; margin-top:20px;
+}
+#wrap #header_bg header #h_btm h1{}
+#wrap #header_bg header #h_btm h1 a{}
+#wrap #header_bg header #h_btm h1 a img{width:250px;}
+/*nav*/
+#wrap #header_bg header #h_btm nav{}
+/*메뉴바*/
+#wrap #header_bg header #h_btm p{display:none;}
+#wrap #header_bg header #h_btm p a{}
+#wrap #header_bg header #h_btm p img{}
+/*nav*/
+#wrap #header_bg header #h_btm nav ul{}
+#wrap #header_bg header #h_btm nav ul li{
+    display:inline-block; margin-right:70px;
+}
+#wrap #header_bg header #h_btm nav ul li:last-child{margin:0;}
+#wrap #header_bg header #h_btm nav ul li a{
+    height:80px; line-height:80px; display:inline-block;
+    color:#fff; font-family:"cambria";
+    font-size:0.938em; letter-spacing:0.05em;
+}
+#wrap #header_bg header #h_btm nav ul li a:hover{color:#e2ca87;}
+
+/*visual*/
+#wrap #visual #visual_txt{padding-top:188px;}
+#wrap #visual #visual_txt li{
+    font-family:"Microsoft Sans Serif"; font-size:0.938em; letter-spacing:0.04em;
+    margin-bottom:20px;
+}
+#wrap #visual #visual_txt li span{font-size:2.813em;}
+#wrap #visual #visual_txt li a{
+    display:inline-block; font-size:0.750em;
+    border:1px solid #fff; border-radius:12px; padding:6px 40px;
+    margin-top:57px;
+}
+/*visual group*/
+#wrap #visual #visual_txt li, #wrap #visual #visual_txt li a{color:#fff;}
+
+/*section*/
+/*contents1*/
+#wrap #contents1 .parallax1{float:left; width:50%; height:740px;}
+#wrap #contents1 #c_left a{
+    display:inline-block; margin-top:550px;
+}
+#wrap #contents1 #c_left a p{
+    color:#fff;
+}
+#wrap #contents1 #c_left a p em{}
+#wrap #contents1 #c_left a p img{}
+/*section*/
+#wrap #contents1 section{float:right; width:50%;}
+/*s_top*/
+#wrap #contents1 section .parallax2{height:370px;}
+#wrap #contents1 section #s_top a{
+    float:left; margin:120px 0 0 50px;
+}
+#wrap #contents1 section #s_top a p{}
+#wrap #contents1 section #s_top a p em{}
+#wrap #contents1 section #s_top a img{}
+/*s_btm*/
+#wrap #contents1 section .parallax3{height:370px;}
+#wrap #contents1 section #s_btm a{
+    float:right; margin:120px 257px 0 0;
+    display:inline-block;
+}
+#wrap #contents1 section #s_btm a p{}
+#wrap #contents1 section #s_btm a p em{}
+#wrap #contents1 section #s_btm a img{}
+
+/*contents1 group*/
+#wrap #contents1 section #s_top a, #wrap #contents1 section #s_btm a{color:#000;}
+#wrap #contents1 #c_left a p, #wrap #contents1 section #s_top a p, #wrap #contents1 section #s_btm a p{
+    font-family:"Microsoft Sans Serif"; font-size:0.938em;
+    letter-spacing:0.05em; line-height:30px;
+}
+#wrap #contents1 #c_left a p, #wrap #contents1 section #s_top a p, #wrap #contents1 section #s_btm a p{margin-bottom:25px;}
+#wrap #contents1 #c_left a p em, #wrap #contents1 section #s_top a p em, #wrap #contents1 section #s_btm a p em{
+    font-size:1.875em;
+}
+
+/*contents2*/
+#wrap #contents2 h2{
+    font-family:"Microsoft Sans Serif"; font-size:1.875em;
+    letter-spacing:0.05em;
+}
+/*new in*/
+#wrap #contents2 #example{width:100%; position:relative;}
+
+/*인디케이터*/
+#wrap #contents2 #example .MS-controls button{
+    background:0; border:0; position:absolute; top:50%; cursor:pointer;
+}
+#wrap #contents2 #example .MS-controls button img{width:50%;}
+#wrap #contents2 #example .MS-controls .MS-left{left:0;}
+#wrap #contents2 #example .MS-controls .MS-right{right:0;}
+
+/*상품리스트*/
+#wrap #contents2 #example #new_list{
+    width:90%; margin:0 auto; overflow:hidden;
+    white-space:nowrap;
+}
+#wrap #contents2 #example #new_list li{
+    display:inline-block; width:33.33%; height:100%; overflow:hidden; vertical-align:top; position:relative;
+}
+#wrap #contents2 #example #new_list li a{display:inline;}
+#wrap #contents2 #example #new_list li a img{width:100%;}
+#wrap #contents2 #example #new_list li a p{
+    font-family:"KoreanNGDM"; font-size:0.938em;
+    color:#000; line-height:18px; margin-bottom:24px;
+    letter-spacing:0.05em;
+}
+#wrap #contents2 #example #new_list li a p:last-child{margin:0;}
+#wrap #contents2 #example #new_list li a p em{
+    color:#aaa; font-family:"KoreanNGDL";
+}
+
+/*footer*/
+#wrap #footer_bg footer p{width:20%; float:left;}
+#wrap #footer_bg footer p a{}
+#wrap #footer_bg footer p a img{width:160px;}
+/*f_txt*/
+#wrap #footer_bg footer #f_txt{width:80%; float:right;}
+/*f_top*/
+#wrap #footer_bg footer #f_txt #f_top{
+    overflow:hidden; margin-bottom:71px;
+}
+#wrap #footer_bg footer #f_txt #f_top ul{float:left}
+#wrap #footer_bg footer #f_txt #f_top ul li{
+    display:inline-block; margin-right:20px;
+}
+#wrap #footer_bg footer #f_txt #f_top ul li:last-child{margin:0;}
+#wrap #footer_bg footer #f_txt #f_top ul li a{}
+#wrap #footer_bg footer #f_txt #f_top #f_lang{
+    float:right; display:inline-block;
+    border:1px solid #fff; padding:5px 45px 5px 20px;
+    background:url(../image/index/lang_view_icon.png) no-repeat 85px;
+}
+/*f_btm*/
+#wrap #footer_bg footer #f_txt #f_btm{overflow:hidden;}
+#wrap #footer_bg footer #f_txt #f_btm ul{float:left; text-align:left;}
+#wrap #footer_bg footer #f_txt #f_btm ul li{}
+#wrap #footer_bg footer #f_txt #f_btm dl{float:right; text-align:left;}
+#wrap #footer_bg footer #f_txt #f_btm dl dt{margin-bottom:22px;}
+#wrap #footer_bg footer #f_txt #f_btm dl dd{}
+#wrap #footer_bg footer #f_txt #f_btm dl dd address{}
+
+/*footer group*/
+#wrap #footer_bg footer #f_txt #f_top ul li a, #wrap #footer_bg footer #f_txt #f_top #f_lang, #wrap #footer_bg footer #f_txt #f_btm ul li, #wrap #footer_bg footer #f_txt #f_btm dl dt, #wrap #footer_bg footer #f_txt #f_btm dl dd{
+    color:#fff; font-family:"KoreanNGDL";
+    font-size:0.938em; letter-spacing:0.04em; line-height:21px;
+}
+
+/*미디어쿼리*/
+@media screen and (max-width:1400px) {
+/*header*/
+    #wrap #header_bg header{width:95%;}
+    
+/*contents1*/
+    #wrap #contents1 #c_left{width:100%; height:370px;}
+    #wrap #contents1 #c_left a{margin:127px auto;}
+    /*section*/
+    #wrap #contents1 section{width:100%;}
+    /*s_top*/
+    #wrap #contents1 section #s_top a{
+        float:none; display:inline-block; margin:127px auto;
+    }
+    /*s_btm*/
+    #wrap #contents1 section #s_btm a{
+        float:none; display:inline-block; margin:127px auto;
+    }
+    
+/*contents2*/
+    #wrap #contents2{width:95%;}
+    /*new 상품이미지*/
+    #wrap #contents2 #example #new_list{width:80%;}
+    #wrap #contents2 #example #new_list li{width:50%;}
+    
+/*footer*/
+    #wrap #footer_bg footer{width:95%;}
+}
+
+@media screen and (max-width:980px) {
+/*header*/    
+    #wrap #header_bg header{
+        height:120px; line-height:120px;
+    }
+    #wrap #header_bg header #h_btm{margin:0;}
+    /*로고*/
+    #wrap #header_bg header #h_btm h1{display:inline-block;}
+    /*메뉴바*/
+    #wrap #header_bg header #h_btm p{
+        display:inline-block; float:left;
+    }
+    #wrap #header_bg header #h_btm p img{width:30px;}
+    /*header group*/
+    #wrap #header_bg header #h_top, #wrap #header_bg header #h_btm nav{display:none;}
+/*visual*/
+    #wrap #visual{margin-top:120px; height:840px;}
+/*contents2*/
+    /*상품 이미지*/
+    #wrap #contents2 #example #new_list{width:60%;}
+    #wrap #contents2 #example #new_list li{width:100%;}
+    
+/*footer*/
+    /*로고*/
+    #wrap #footer_bg footer p{width:100%; float:none; margin-bottom:40px;}
+    #wrap #footer_bg footer p a img{width:170px;}
+    
+    /*f_txt*/
+    #wrap #footer_bg footer #f_txt{width:100%;}
+    /*f_top*/
+    #wrap #footer_bg footer #f_txt #f_top ul{
+        float:none; margin-bottom:20px;
+    }
+    #wrap #footer_bg footer #f_txt #f_top #f_lang{float:none;}
+    /*f_btm*/
+    #wrap #footer_bg footer #f_txt #f_btm ul{margin-bottom:40px;}
+    #wrap #footer_bg footer #f_txt #f_btm dl{}
+    /*footer group*/
+    #wrap #footer_bg footer #f_txt #f_btm ul, #wrap #footer_bg footer #f_txt #f_btm dl{
+        float:none; text-align:center;
+    }
+}

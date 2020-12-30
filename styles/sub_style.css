@@ -1,0 +1,456 @@
+@font-face{
+    font-family:"cambria";
+    src:url(../fonts/cambria.ttc);
+    font-family:"KoreanNGDL";
+    src:url(../fonts/KoreanNGDL.woff);
+    font-family:"KoreanNGDM";
+    src:url(../fonts/KoreanNGDM.woff);
+}
+/*top*/
+#top{
+    width:50px; height:50px;
+    text-align:center; line-height:50px;
+    border:1px solid #000;
+    background:#fff; text-decoration:none; color:#000;
+    font-size:0.75em; font-family:"KoreanNGDM", serif;
+    letter-spacing:-0.05em;
+    position:fixed; bottom:30px; right:30px;
+}
+/*layout*/
+#wrap{text-align:center;}
+#wrap #header_bg{
+    background-color:#000; width:100%;
+    position:fixed; left:0; top:0; z-index:9999;
+}
+#wrap #header_bg header{
+    height:150px; width:1400px; margin:0 auto; 
+}
+#wrap section{
+    width:1400px; margin:150px auto 0;
+}
+#wrap section #contents1{
+    overflow:hidden; margin-bottom:226px; height:100%;
+}
+#wrap section #contents2{
+    text-align:center; width:1400px;
+}
+#wrap section #contents3{
+    border-top:1px solid #aaa; 
+    padding-top:50px; margin-bottom:200px;
+}
+#wrap #footer_bg{background-color:#000;}
+#wrap #footer_bg footer{
+    width:1400px; margin:0 auto; padding: 54px 0; overflow:hidden;
+}
+
+a{text-decoration:none;}
+
+/*header----------------------------------------------------------------------*/
+/*top*/
+#wrap #header_bg header #h_top{
+    overflow:hidden; height:30px; line-height:30px;
+}
+/*top_left*/
+#wrap #header_bg header #h_top #h_top_left{
+    float:left;
+}
+#wrap #header_bg header #h_top #h_top_left li{
+    display:inline-block;
+}
+#wrap #header_bg header #h_top #h_top_left li a{}
+/*top_right*/
+#wrap #header_bg header #h_top #h_top_right{
+    float:right;
+}
+#wrap #header_bg header #h_top #h_top_right li{
+    display:inline-block;
+}
+#wrap #header_bg header #h_top #h_top_right li a{}
+#wrap #header_bg header #h_top #h_top_right li a em{
+    color:#ff0000; margin-left:5px;
+}
+#wrap #header_bg header #h_top #h_top_right li a img{width:14px;}
+
+/*header #h_top group*/
+#wrap #header_bg header #h_top #h_top_left li a, #wrap #header_bg header #h_top #h_top_right li a{
+    color:#fff; font-family:"Microsoft Sans Serif";
+    font-size:0.813em; letter-spacing:-0.025em;
+    margin-right:15px;
+}
+#wrap #header_bg header #h_top #h_top_left b, #wrap #header_bg header #h_top #h_top_right b{
+    border-right:1px solid #fff; display:inline-block;
+    margin-right:10px; height:10px; line-height:10px;
+}
+
+/*btm*/
+#wrap #header_bg header #h_btm{
+    clear:both; height:120px; margin-top:20px;
+}
+#wrap #header_bg header #h_btm h1{}
+#wrap #header_bg header #h_btm h1 a{}
+#wrap #header_bg header #h_btm h1 a img{width:250px;}
+/*nav*/
+#wrap #header_bg header #h_btm nav{}
+/*메뉴바*/
+#wrap #header_bg header #h_btm p{display:none;}
+#wrap #header_bg header #h_btm p a{}
+#wrap #header_bg header #h_btm p img{}
+/*nav*/
+#wrap #header_bg header #h_btm nav ul{}
+#wrap #header_bg header #h_btm nav ul li{
+    display:inline-block; margin-right:70px;
+}
+#wrap #header_bg header #h_btm nav ul li:last-child{margin:0;}
+#wrap #header_bg header #h_btm nav ul li a{
+    height:80px; line-height:80px; display:inline-block;
+    color:#fff; font-family:"cambria";
+    font-size:0.938em; letter-spacing:0.05em;
+}
+#wrap #header_bg header #h_btm nav ul li a:hover{color:#e2ca87;}
+
+/*section----------------------------------------------------------------------*/
+/*contents1----------------------------------------------------------------------*/
+/*페이지경로*/
+#wrap section #contents1 dl{
+    float:left; margin:25px 0 50px; 
+}
+#wrap section #contents1 dl dt{display:none;}
+#wrap section #contents1 dl dd{
+    font-family:"Microsoft Sans Serif"; font-size:0.938em;
+    letter-spacing:-0.01em; color:#ddd;
+}
+#wrap section #contents1 dl dd a{color:#aaa;}
+#wrap section #contents1 dl dd a em{color:#000;}
+
+/*상품---------------------------------------------------------------------------*/
+#wrap section #contents1 #product{overflow:hidden; height:100%; width:1400px; margin:0 auto;}
+/*left---------------------------------------------------------------------------*/
+#wrap section #contents1 #product #c_left{clear:both; float:left; width:50%; height:100%;}
+/*상품 이미지*/
+#wrap section #contents1 #product #c_left #product_img{
+    display:inline-block; width:75%; height:70%; position:relative;
+}
+#wrap section #contents1 #product #c_left #product_img li{position:absolute; top:0;}
+#wrap section #contents1 #product #c_left #product_img li.skip{display:none;}
+#wrap section #contents1 #product #c_left #product_img li img{width:100%;}
+/*인디케이터*/
+#wrap section #contents1 #product #c_left #indecator{width:100%; margin:521px auto 0; height:10%;}
+#wrap section #contents1 #product #c_left #indecator li{display:inline-block; margin-right:3px; padding:3px;}
+#wrap section #contents1 #product #c_left #indecator li:last-child{margin:0;}
+#wrap section #contents1 #product #c_left #indecator li a{
+    display:inline-block; width:13px; height:13px; line-height:30px; 
+    box-sizing:border-box; border:1px solid #000; border-radius:19px;
+}
+#wrap section #contents1 #product #c_left #indecator li:first-child a{background-color:#000;}
+/*right---------------------------------------------------------------------------*/
+#wrap section #contents1 #product #c_right{
+    float:right; width:50%; text-align:left; margin-top:43px;
+    font-family:"KoreanNGDL"; font-size:0.813em;
+}
+/*상품명*/
+#wrap section #contents1 #product #c_right #product_name{
+    overflow:hidden; border-bottom:1px solid #7d7d7d; padding-bottom:25px; box-sizing:border-box;
+}
+#wrap section #contents1 #product #c_right #product_name h2{
+    display:inline-block; 
+    float:left; letter-spacing:0.06em; line-height:1.2;
+}
+#wrap section #contents1 #product #c_right #product_name h2 em{
+    display:block; font-family:"KoreanNGDM"; font-size:1.875em; font-weight:800;
+}
+/*아이콘*/
+#wrap section #contents1 #product #c_right #product_name #icon{float:right; margin-top:9px;}
+#wrap section #contents1 #product #c_right #product_name #icon li{display:inline-block; margin-right:10px;}
+#wrap section #contents1 #product #c_right #product_name #icon li a{}
+#wrap section #contents1 #product #c_right #product_name #icon li a:last-child{margin:0;}
+
+/*상품정보*/
+#wrap section #contents1 #product #c_right #product_detail{
+    clear:both; border-bottom:1px solid #eee; padding:30px 0; margin-bottom:30px;
+}
+#wrap section #contents1 #product #c_right #product_detail li{
+    margin-bottom:24px; 
+}
+#wrap section #contents1 #product #c_right #product_detail li:last-child{border-top:1px solid #eee; padding-top:30px; margin:30px 0 0 0;}
+#wrap section #contents1 #product #c_right #product_detail li p{display:inline-block;}
+#wrap section #contents1 #product #c_right #product_detail li #point{
+    padding:1px 0 1px 20px;
+    background:url(../image/sub/icon_point.png) no-repeat left;
+}
+
+#wrap section #contents1 #product #c_right #product_detail li p:first-child, #wrap section #contents1 #product #c_right form fieldset ul li:first-child{
+    width:20%; font-family:"KoreanNGDM"; letter-spacing:0.1em;
+}
+
+#wrap section #contents1 #product #c_right #product_detail li p:last-child{color:#7d7d7d; letter-spacing:-0.015em;}
+#wrap section #contents1 #product #c_right #product_detail li p del{
+    color:#bbb; margin-right:12px;
+}
+#wrap section #contents1 #product #c_right #product_detail li p em{ color:#5f5f5f; font-family:"KoreanNGDM";  font-weight:800;}
+/*컬러/상품개수/구매버튼_form*/
+#wrap section #contents1 #product #c_right form{clear:both;}
+#wrap section #contents1 #product #c_right form fieldset{}
+#wrap section #contents1 #product #c_right form fieldset legend{display:none;}
+#wrap section #contents1 #product #c_right form fieldset ul{}
+#wrap section #contents1 #product #c_right form fieldset ul li{display:inline-block;}
+#wrap section #contents1 #product #c_right form fieldset ul li:first-child{}
+/*컬러버튼*/
+#wrap section #contents1 #product #c_right form fieldset #color_btn{margin-bottom:24px;}
+#wrap section #contents1 #product #c_right form fieldset #color_btn li{}
+#wrap section #contents1 #product #c_right form fieldset #color_btn li button{
+    border:0; background:0; padding:0; cursor:pointer;
+}
+#wrap section #contents1 #product #c_right form fieldset #color_btn li button img{}
+/*상품개수버튼*/
+#wrap section #contents1 #product #c_right form fieldset #count_btn{margin-bottom:95px;}
+#wrap section #contents1 #product #c_right form fieldset #count_btn li{}
+#wrap section #contents1 #product #c_right form fieldset #count_btn li button{cursor:pointer;}
+#wrap section #contents1 #product #c_right form fieldset #count_btn li:last-child button{border-right:1px solid #eee;}
+#wrap section #contents1 #product #c_right form fieldset #count_btn li input{padding-left:13px}
+/*상품개수버튼 group*/
+#wrap section #contents1 #product #c_right form fieldset #count_btn li button, #wrap section #contents1 #product #c_right form fieldset #count_btn li input{
+    width:36px; height:36px; margin-right:-5px;
+    background:0; border:1px solid #eee; box-sizing:border-box;
+    border-right:0;
+}
+/*구매버튼*/
+#wrap section #contents1 #product #c_right form fieldset #buy_btn{}
+#wrap section #contents1 #product #c_right form fieldset #buy_btn li{width:48%;}
+#wrap section #contents1 #product #c_right form fieldset #buy_btn li button{
+    background:0; border:1px solid #000; width:100%; height:45px;
+    font-family:"KoreanNGDM"; font-weight:800; font-size:0.938em; letter-spacing:0.075em;
+    cursor:pointer;
+    box-sizing:border-box;
+}
+#wrap section #contents1 #product #c_right form fieldset #buy_btn li #buy_now{background:#000; color:#fff;}
+
+/*contents2----------------------------------------------------------------------*/
+#wrap section #contents2 h2{
+    font-family:"KoreanNGDM"; font-size:1.563em; letter-spacing:0.075em; 
+    margin-bottom:46px;
+}
+#wrap section #contents2 #info{
+    display:inline-block; margin-bottom:164px; 
+    text-align:center;
+}
+#wrap section #contents2 #info li{
+    color:#aaa; font-size:0.875em; letter-spacing:0.1em; line-height:1.3; text-align:left; 
+    margin-bottom:15px;
+}
+#wrap section #contents2 #info li:last-child{margin:0;}
+
+/*info_img*/
+#wrap section #contents2 #info_img{
+    display:block;
+    background-color:aqua; width:60%; padding-top:50%; margin:0 auto 97px;
+    background-image:url(../image/sub/cross_shoulderbag_0.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+}
+
+#wrap section #contents2 #explan{margin-bottom:37px;}
+#wrap section #contents2 #explan li{
+    font-family:"KoreanNGDL"; font-size:0.938em; letter-spacing:-0.05em; line-height:1.55;
+    margin-bottom:35px;
+}
+#wrap section #contents2 #explan li:last-child{margin:0;}
+#wrap section #contents2 #explan li em{
+    font-family:"Microsoft Sans Serif"; font-size:1.688em;
+    letter-spacing:0.05em;
+    display:block; margin-bottom:55px;
+}
+/*상품 이미지*/
+#wrap section #contents2 #ex_img{
+    width:662px; margin:0 auto; margin-bottom:170px;
+}
+#wrap section #contents2 #ex_img p{width:100%; padding-top:662px;}
+#wrap section #contents2 #ex_img #ex_img_1{
+    background-image:url(../image/sub/cross_shoulderbag_1.jpg);
+    background-size:100%;
+}
+#wrap section #contents2 #ex_img #ex_img_2{
+    background-image:url(../image/sub/cross_shoulderbag_2.jpg);
+    background-size:100%;
+}
+#wrap section #contents2 #ex_img #ex_img_3{
+    background-image:url(../image/sub/cross_shoulderbag_3.jpg);
+    background-size:100%;
+}
+#wrap section #contents2 #ex_img #ex_img_4{
+    background-image:url(../image/sub/cross_shoulderbag_4.jpg);
+    background-size:100%;
+}
+#wrap section #contents2 #ex_img #ex_img_5{
+    background-image:url(../image/sub/cross_shoulderbag_5.jpg);
+    background-size:100%;
+}
+
+/*상품 상세 정보*/
+#wrap section #contents2 table{
+    display:inline-block; margin-bottom:212px;
+    font-family:"KoreanNGDM"; font-size:0.813em; letter-spacing:0.1em;
+}
+#wrap section #contents2 table tr{
+    border:1px solid #ccc;
+}
+#wrap section #contents2 table tr th{
+    border:1px solid #ccc; background:#eee; padding:13px 60px;
+}
+#wrap section #contents2 table tr td{
+    text-align:left; padding:13px 100px 13px 50px;
+    color:#7d7d7d; letter-spacing:-0.01em;
+}
+
+/*contents3----------------------------------------------------------------------*/
+#wrap section #contents3 ul{
+    width:1200px; margin:0 auto;
+}
+#wrap section #contents3 ul li{
+    overflow:hidden; padding:20px;
+    border-bottom:1px solid #ccc;
+}
+#wrap section #contents3 ul li a{
+    color:#000; font-family:"KoreanNGDM"; font-size:0.938em;
+    letter-spacing:0.1em;
+}
+#wrap section #contents3 ul li a p{
+    float:left;
+}
+#wrap section #contents3 ul li a img{
+    float:right;
+}
+
+/*footer----------------------------------------------------------------------*/
+#wrap #footer_bg footer p{width:20%; float:left;}
+#wrap #footer_bg footer p a{}
+#wrap #footer_bg footer p a img{width:160px;}
+/*f_txt*/
+#wrap #footer_bg footer #f_txt{width:80%; float:right;}
+/*f_top*/
+#wrap #footer_bg footer #f_txt #f_top{
+    overflow:hidden; margin-bottom:71px;
+}
+#wrap #footer_bg footer #f_txt #f_top ul{float:left;}
+#wrap #footer_bg footer #f_txt #f_top ul li{
+    display:inline-block; margin-right:20px;
+}
+#wrap #footer_bg footer #f_txt #f_top ul li:last-child{margin:0;}
+#wrap #footer_bg footer #f_txt #f_top ul li a{}
+#wrap #footer_bg footer #f_txt #f_top #f_lang{
+    float:right; display:inline-block;
+    border:1px solid #fff; padding:5px 45px 5px 20px;
+    background:url(../image/index/lang_view_icon.png) no-repeat 85px;
+}
+/*f_btm*/
+#wrap #footer_bg footer #f_txt #f_btm{overflow:hidden;}
+#wrap #footer_bg footer #f_txt #f_btm ul{float:left; text-align:left;}
+#wrap #footer_bg footer #f_txt #f_btm ul li{}
+#wrap #footer_bg footer #f_txt #f_btm dl{float:right; text-align:left;}
+#wrap #footer_bg footer #f_txt #f_btm dl dt{margin-bottom:22px;}
+#wrap #footer_bg footer #f_txt #f_btm dl dd{}
+#wrap #footer_bg footer #f_txt #f_btm dl dd address{}
+
+/*footer group*/
+#wrap #footer_bg footer #f_txt #f_top ul li a, #wrap #footer_bg footer #f_txt #f_top #f_lang, #wrap #footer_bg footer #f_txt #f_btm ul li, #wrap #footer_bg footer #f_txt #f_btm dl dt, #wrap #footer_bg footer #f_txt #f_btm dl dd{
+    color:#fff; font-family:"KoreanNGDL";
+    font-size:0.938em; letter-spacing:0.04em; line-height:21px;
+}
+
+/*미디어쿼리 1400px-----------------------------------------------------------------*/
+@media screen and (max-width:1400px) {
+/*header*/
+    #wrap #header_bg header{width:98%;}
+    
+/*section*/
+    #wrap section{width:100%;}
+    /*contents1*/
+    #wrap section #contents1{width:98%; margin:0 auto 250px;}
+    #wrap section #contents1 dl{margin:25px 0 0; }
+    #wrap section #contents1 #product{width:100%;}
+    /*상품 이미지*/
+    #wrap section #contents1 #product #c_left #product_img{width:77%;}
+    
+    /*contents2*/
+    #wrap section #contents2{width:98%; margin:0 auto;}
+    
+    /*contents3*/
+    #wrap section #contents3{width:98%; margin:0 auto 200px;}
+    #wrap section #contents3 ul{width:90%;}
+    
+/*footer*/
+    #wrap #footer_bg footer{width:95%;}
+}
+
+/*미디어쿼리 980px-----------------------------------------------------------------*/
+@media screen and (max-width:980px) {
+/*header*/
+    #wrap #header_bg header{
+        height:100px; line-height:100px;
+    }
+    #wrap #header_bg header #h_btm{margin:0;}
+    /*로고*/
+    #wrap #header_bg header #h_btm h1{display:inline-block;}
+    /*메뉴바*/
+    #wrap #header_bg header #h_btm p{
+        display:inline-block; float:left;
+    }
+    #wrap #header_bg header #h_btm p img{width:30px;}
+    /*header group*/
+    #wrap #header_bg header #h_top, #wrap #header_bg header #h_btm nav{display:none;}
+    
+/*section*/
+    #wrap section{margin-top:100px;}
+    /*contents1*/
+    /*상품*/
+    /*left*/
+    #wrap section #contents1 #product #c_left{float:none; width:100%; height:36%;}
+    /*상품 이미지*/
+    #wrap section #contents1 #product #c_left #product_img{width:50%;}
+    /*인디케이터*/
+    #wrap section #contents1 #product #c_left #indecator{margin-top:50%;}
+    /*right*/
+    #wrap section #contents1 #product #c_right{
+        float:none; width:95%; margin:0 auto; display:inline-block;
+    }
+    
+    /*상품 상세 정보*/
+    #wrap section #contents2 table{
+        display:inline-block; margin-bottom:212px;
+        font-family:"KoreanNGDM"; font-size:0.813em; letter-spacing:0.1em;
+    }
+    #wrap section #contents2 table tr{
+        border:1px solid #ccc;
+    }
+    #wrap section #contents2 table tr th{
+        border:1px solid #ccc; background:#eee; padding:13px 15px;
+    }
+    #wrap section #contents2 table tr td{
+        text-align:left; padding:13px 30px;
+        color:#7d7d7d; letter-spacing:-0.01em;
+    }
+    
+    /*contents2*/
+    /*상품 이미지*/
+    #wrap section #contents2 #ex_img{width:100%;}
+    #wrap section #contents2 #ex_img p{padding-top:100%;}
+    
+/*footer*/
+    /*로고*/
+    #wrap #footer_bg footer p{width:100%; float:none; margin-bottom:40px;}
+    #wrap #footer_bg footer p a img{width:170px;}
+    
+    /*f_txt*/
+    #wrap #footer_bg footer #f_txt{width:100%;}
+    /*f_top*/
+    #wrap #footer_bg footer #f_txt #f_top ul{
+        float:none; margin-bottom:20px;
+    }
+    #wrap #footer_bg footer #f_txt #f_top #f_lang{float:none;}
+    /*f_btm*/
+    #wrap #footer_bg footer #f_txt #f_btm ul{margin-bottom:40px;}
+    #wrap #footer_bg footer #f_txt #f_btm dl{}
+    /*footer group*/
+    #wrap #footer_bg footer #f_txt #f_btm ul, #wrap #footer_bg footer #f_txt #f_btm dl{
+        float:none; text-align:center;
+    }
+}

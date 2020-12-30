@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>METROCITY</title>
+<!--style-->
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="styles/sub_style.css">
+<!--js/jq-->
+        <script src='js/jquery-3.3.1.min.js'></script>
+        <script>
+            $(function(){
+/*--------------변수 저장*/
+                //이미지 인디케이터
+                var $btn_product=$('ul#indecator li');
+                var $view_product=$('ul#product_img');
+                var idx=0; //슬라이드 번호
+                //아이콘
+                var $btn_heart=$('a.heart');
+                var $btn_share=$('a.share');
+                var img=true;
+                //상품개수버튼
+                var $btn_minus=$('button#minus');
+                var $btn_plus=$('button#plus');
+                var count_min=0; //최소값
+                var count_max=999; //최대값
+                
+/*--------------contents1*/
+                
+/*--------------contents1 이미지 인디케이터*/
+                //슬라이드 함수
+                function slide(tmp){
+                    idx=idx+tmp; //슬라이드 번호 결정
+                    
+                    //이미지 보이기
+                    $view_product.children().fadeOut();
+                    $view_product.children().eq(idx).fadeIn();
+                    
+                    idx=0; //idx값 초기화
+                }
+                //인디케이터 클릭
+                $btn_product.click(function(){
+                    num=$(this).index(); //클릭된 index 번호 구하기
+                    slide(num); //slide함수 실행
+                    
+                    //버튼 디자인
+                    $btn_product.children().css({'background':'0'});
+                    $(this).children().css({'background-color':'#000'});
+                });
+                
+/*--------------contents1 상품정보*/
+                //하트 아이콘 클릭 시
+                $btn_heart.click(function(){
+                    img=!img;
+                    if(img==true){
+                        $(this).children('img').attr('src','image/sub/icon_like.png');
+                    }else{
+                        $(this).children('img').attr('src','image/sub/click_like.png');
+                    }
+                });
+                //공유 아이콘 클릭시
+                $btn_share.click(function(){
+                    img=!img;
+                    if(img==true){
+                        $(this).children('img').attr('src','image/sub/icon_share.png');
+                    }else{
+                        $(this).children('img').attr('src','image/sub/click_share.png');
+                    }
+                });
+                
+/*--------------contents1 상품 개수 버튼*/
+                //마이너스 버튼 클릭
+                $btn_minus.click(function(){});
+                //플러스 버튼 클
+                $btn_plus.click(function(){});
+            }); //ready end
+        </script>
+    </head>
+    <body>
+        <a href="#" id="top">TOP</a>
+        <div id="wrap">
+<!----------header-->
+            <div id="header_bg">
+                <header> <!--1400px-->
+                    <div id="h_top">
+                        <ul id="h_top_left">
+                            <li><a href="#">LOGIN</a><b></b></li>
+                            <li><a href="#">JOIN</a><b></b></li>
+                            <li><a href="#">MYPAGE</a></li>
+                        </ul>
+                        <ul id="h_top_right">
+                            <li><a href="#">CART<em>(0)</em></a><b></b></li>
+                            <li><a href="#"><img src="image/index/search_icon.png" alt="검색"></a></li>
+                        </ul>
+                    </div>
+                    <div id="h_btm">
+                        <!--로고-->
+                        <h1><a href="#"><img src="image/index/h_logo.svg" alt="metrocity"></a></h1>
+                        <!--메뉴바-->
+                        <p><a href="#"><img src="image/index/menu_bar.png" alt="메뉴 더보기"></a></p>
+                        <!--내비-->
+                        <nav>
+                            <ul>
+                                <li><a href="#">WOMEN</a></li>
+                                <li><a href="#">MEN</a></li>
+                                <li><a href="#">LOUNGE</a></li>
+                                <li><a href="#">EVENT</a></li>
+                                <li><a href="#">STORY</a></li>
+                                <li><a href="#">STORE</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            
+<!----------section-->
+            <section>
+<!--------------contents1-->
+                <div id="contents1">
+                    <dl>
+                        <dt>페이지 경로</dt>
+                        <dd><a href="#">Home</a> &gt; <a href="#">Women</a> &gt; <a href="#">Bag</a> &gt; <a href="#"><em>Shoulder/Hobo Bags</em></a></dd>
+                    </dl>
+<!------------------상품-->
+                    <div id="product">
+                        <div id="c_left">
+                            <!--이미지-->
+                            <ul id="product_img">
+                                <li><img src="image/sub/cross_shoulderbag_M82MV775R.jpg" alt="1번 이미지"></li>
+                                <li class="skip"><img src="image/sub/cross_shoulderbag_1.jpg" alt="2번 이미지"></li>
+                                <li class="skip"><img src="image/sub/cross_shoulderbag_2.jpg" alt="3번 이미지"></li>
+                            </ul>
+                            <!--인디케이터-->
+                            <ul id="indecator">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                        <div id="c_right">
+                            <div id="product_name">
+                                <h2>M82MV775R<em>크로스 겸 숄더백</em></h2>
+                                <!--찜하기/공유하기 아이콘-->
+                                <ul id="icon">
+                                    <li><a href="#" class="heart"><img src="image/sub/icon_like.png" alt="찜하기"></a></li>
+                                    <li><a href="#" class="share"><img src="image/sub/icon_share.png" alt="공유하기"></a></li>
+                                </ul>
+                            </div>
+                            <!--상품 정보-->
+                            <ul id="product_detail">
+                                <li>
+                                    <p>판매가</p>
+                                    <p><del>397,000원</del><em>357,300원</em></p>
+                                </li>
+                                <li>
+                                    <p>적립금</p>
+                                    <p id="point">14,292</p>
+                                </li>
+                                <li>
+                                    <p>배송</p>
+                                    <p>주문 확인 다음날부터 3-5일(공휴일/주말 제외) | 한진택배</p>
+                                </li>
+                            </ul>
+                            <form method="post" action="#" id="buy_frm">
+                                <fieldset>
+                                    <legend>구매 양식</legend>
+                                    <ul id="color_btn">
+                                        <li>컬러</li>
+                                        <li><button type="submit" id="red"><img src="image/sub/color_red.png" alt="레드 컬러"></button></li>
+                                    </ul>
+                                    <ul id="count_btn">
+                                        <li>상품 개수</li>
+                                        <li><button type="submit" id="minus">-</button></li>
+                                        <li><input type="text" value="1" name="count"></li>
+                                        <li><button type="submit" id="plus">+</button></li>
+                                    </ul>
+                                    <ul id="buy_btn">
+                                        <li><button type="submit" id="buy_now">BUY NOW</button></li>
+                                        <li><button type="submit" id="cart">CART</button></li>
+                                    </ul>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+<!--------------contents2-->
+                <div id="contents2">
+                    <h2>제품 설명</h2>
+                    <div id="info_img"></div>
+                    <ul id="explan">
+                        <li>18SS 시즌의 키워드 <em>ATTITUDE, #LOVE #METROCITY</em></li>
+                        <li>
+                            라이트닝 라인을 디벨롭한 스트라이프 패턴의 PVC에,<br>
+                            프린트되어 캐쥬얼한 느낌으로 연출 가능한 시즌 스페셜 크로스백
+                        </li>
+                        <li>
+                            미디엄 사이즈로 넉넉하게 수납 가능하며,<br>
+                            팝한 컬러감의 패턴PVC와 또렷한 로고 불박으로 평범한 룩에 포인트가 되어줄 수 있는 아이템 
+                        </li>
+                    </ul>
+                    <div id="ex_img"> <!--상품 이미지-->
+                        <p id="ex_img_1"></p>
+                        <p id="ex_img_2"></p>
+                        <p id="ex_img_3"></p>
+                        <p id="ex_img_4"></p>
+                        <p id="ex_img_5"></p>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>종류</th>
+                            <td>가방</td>
+                        </tr>
+                        <tr>
+                            <th>소재</th>
+                            <td>소가죽</td>
+                        </tr>
+                        <tr>
+                            <th>색상</th>
+                            <td>레드</td>
+                        </tr>
+                        <tr>
+                            <th>크기</th>
+                            <td>W28cm * H20cm * D8.5cm / Cross T.T 55cm</td>
+                        </tr>
+                        <tr>
+                            <th>제조자</th>
+                            <td>(주)디에스피홀딩스</td>
+                        </tr>
+                        <tr>
+                            <th>제조국</th>
+                            <td>대한민국</td>
+                        </tr>
+                    </table>
+                </div>
+                
+<!--------------contents3-->
+                <div id="contents3"> <!--1400px-->
+                    <ul> <!--1200px-->
+                        <li>
+                            <a href="#">
+                                <p>A/S</p>
+                                <img src="image/index/menu_viewmore.png" alt="더 보기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>배송/교환/반품</p>
+                                <img src="image/index/menu_viewmore.png" alt="더 보기">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>취급시주의사항</p>
+                                <img src="image/index/menu_viewmore.png" alt="더 보기">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+<!----------footer-->
+            <div id="footer_bg">
+                <footer>
+                    <p><a href="#"><img src="image/index/f_logo.svg" alt="METROCITY MILANO"></a></p>
+                    <div id="f_txt">
+                        <div id="f_top">
+                            <ul>
+                                <li><a href="#">개인정보취급방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">소비자피해보상 보상보험</a></li>
+                                <li><a href="#">서비스 가입사실확인</a></li>
+                            </ul>
+                            <a href="#" id="f_lang">Korean</a>
+                        </div>
+                        <div id="f_btm">
+                            <ul>
+                                <li>(주)엠티콜렉션 대표이사 : 양지해</li>
+                                <li>135-819 서울특별시 강남구 도산대로 318 (SB TOWER)</li>
+                                <li>사업자등록번호 : 218-81-20703</li>
+                                <li>통신판매업신고 : 제 2018-서울강남-00416 호</li>
+                                <li>개인정보관리책임자 : 이재학</li>
+                                <li>COPYRIGHT METROCITY. ALL RIGHTS RESERVED.</li>
+                            </ul>
+                            <dl>
+                                <dt>Online CS Center</dt>
+                                <dd><address>Tel : 1566-1165</address></dd>
+                                <dd>E-mail : webmaster@metrocity.co.kr</dd>
+                                <dd>월 - 금 09:00 ~18:00</dd>
+                                <dd>(점심 12:00 ~ 13:00)</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
